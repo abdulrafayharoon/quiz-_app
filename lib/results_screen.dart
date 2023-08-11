@@ -19,7 +19,7 @@ class ResultsScreen extends StatelessWidget {
         {
           'question_index': i,
           'question': questions[i].text,
-          'correct_answer': questions[1].answers[0],
+          'correct_answer': questions[i].answers[0],
           'user_answer': chosenAnswers[i]
         },
       );
