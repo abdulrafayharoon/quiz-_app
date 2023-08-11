@@ -18,7 +18,7 @@ class StartScreen extends StatelessWidget {
             ),
             const SizedBox(height: 80),
              Text(
-              'Learn Flutter The Fun Way!',
+              'Learn Flutter With Abdul Rafay Haroon!',
               style: GoogleFonts.lato(
                 color: const Color.fromARGB(255, 237, 223, 252),
                 fontSize: 24,
