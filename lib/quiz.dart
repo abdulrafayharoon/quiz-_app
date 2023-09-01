@@ -33,6 +33,12 @@ class _QuizState extends State<Quiz> {
       });
     }
   }
+  // void restartQuiz(){
+  //   setState(() {
+  //     selectedAnswers = [];
+  //     activeScreen = 'question-screen';
+  //   });
+  // }
 
   @override
   Widget build(context) {

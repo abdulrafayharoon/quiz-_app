@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/questions_summary.dart';
+import 'package:quiz_app/quiz.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({
@@ -27,6 +28,11 @@ class ResultsScreen extends StatelessWidget {
 
     return summary;
   }
+   restartQuiz (){
+    print("Checking Button");
+    var restartQuiz = Quiz;
+    return restartQuiz;
+}
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +59,12 @@ class ResultsScreen extends StatelessWidget {
                 height: 30,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=> const Quiz())
+                  );
+                }, 
+                // restartQuiz,
                 child: const Text('Restart Quiz!'),
               )
             ],
